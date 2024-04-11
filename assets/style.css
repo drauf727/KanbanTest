@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: aqua;
+}
+
+.board {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.rows {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+    padding: 24px 32px;
+    overflow: scroll;
+    height: 100%;
+}
+
+.heading{
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.swim-row{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgb(107, 104, 104);
+    padding: 12px;
+    border-radius: 4px;
+    width: 225px;
+    min-height: 120px;
+    flex-shrink: 0;
+}
+
+.task {
+    background: grey;
+    padding: 12px;
+    border-radius: 4px;
+    cursor:move;
+}
+
+.is-dragging {
+    scale: 1.05;
+    background: black;
+}

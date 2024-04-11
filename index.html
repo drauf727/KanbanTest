@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Kanban Test</title>
+</head>
+<body>
+Testing.....
+<div class="board">
+    <form id="kanban-form">
+        <input type="text" placeholder="Type Task" id="kanban-input">
+        <button type="submit">Submit</button>
+    </form>
+
+<div class="rows">
+    
+    <div class="swim-row" id="todo-row">
+    <h1 class="heading">To Do</h1>
+    <p class="task" draggable="true">Learn JS</p>
+    <p class="task" draggable="true">Learn JS</p>
+    <p class="task" draggable="true">Learn JS</p>
+    </div>
+
+    <div class="swim-row" id="inprogress-row">
+    <h1 class="heading">In Progress</h1>
+    <p class="task" draggable="true">Learn HTML</p>
+    </div>
+
+    <div class="swim-row" id="finished-row">
+    <h1 class="heading">Finished</h1>
+    <p class="task" draggable="true">Sign up for bootcamp</p>
+    </div>
+
+</div>
+
+<script src="./assets/kanban.js"></script>
+<script src="./assets/add.js"></script>
+</body>
+</html>
